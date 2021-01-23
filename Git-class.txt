@@ -1,0 +1,202 @@
+class 1
+========
+Git
+---
+- Version control system (VCS)
+- Source code management (SCM)
+- ope system
+- distributed
+
+branching strategy 
+commanline
+
+svn -subversion
+--
+- licenced
+
+git-gub
+==========
+-  remote repository 
+
+bitbucket
+Gerrrit
+git-gub
+
+central repository vs distributed repository
+
+===========
+download git
+install
+git --version
+git status
+create folder 
+
+git init
+
+
+git config --global user.name "vijayghub"
+git config --global user.email "email id"
+
+
+3 stages
+===========
+1. Working Area - created file 
+2. Stagin area/index area/index - git add <file name>
+3. local area - git commit -m "message "
+ 
+git status  - check status
+git show - will show the files we have committed to local repository
+git show 
+
+
+git add . - to add multiple files
+git commit -m <commit message>
+
+
+Class 2
+==========	
+unix/linux command to create files
+=====================================
+touch file name
+touch file1 file2 file3 - create multiple files
+
+cat > file2
+..........
+.........
+ctrl+d
+
+cat file2  - > content of the file
+
+cat >> file1
+.......
+..........
+
+ctrl+d
+
+vi
+--
+vi filename
+
+i - to add the data
+esc :w - write the file
+esc :q - to close the file
+esc :wq - write the file and close the file
+quit or close the file
+
+esc :q! -force close the file
+esc :wq! - write, close the file forecefully
+
+
+git add file name - move single file
+git add .
+or
+git add *  - to move all the files to staging area/index area
+
+reset
+------
+move file from local area to staging area => git reset --soft cid
+move file from staging area to workspace  => git reset HEAD filename
+local area to workspace area              => git reset --mixed cid
+                                               oR
+											   git reset cid 
+delete the files and commit id            => git reset --hard cid
+
+Note: always we need to reset the previous commit id and not the current cid
+
+
+class3
+===============
+create github account
+
+clone 
+
+git clone path/of/the/repository
+
+git clone https://github.com/vijayghub/Devops-10.git
+
+cd reponame
+
+ls
+
+touch test1 test2
+git add .
+git commit -m "message" 
+
+git push
+
+
+mkdir dir-name --> create directory
+
+cd dir-name
+
+cd ..
+
+delete file
+===========
+rm filename
+git status
+git add .
+git commit -m " "
+
+delete directory
+===============
+rm -rf <dir-name> - 
+r - recursively
+f - forecefully
+
+rename file
+=====
+mv old-filename new-filename
+ls
+git status
+git add .
+git commit 
+
+=============================
+class4
+======
+
+git clone https://github.com/vijayghub/devops-project1.git
+ls
+cd devops-project1
+
+touch yourname
+git add .
+git commit -m " fro xxx "
+
+git push
+
+
+it will be rejected as you dont have permission
+
+provide access to repository
+
+git push
+
+chages will be moved 
+
+if new changes present in remote repo it reject
+
+git pull
+
+it pop a window then new need to enter esc :wq!
+
+git push
+
+----------------
+
+branch clone of data
+
+git branch
+
+git branch <branch name>
+git checkout branch name
+
+git branch
+ 
+git merge branch name
+
+
+
+
+
