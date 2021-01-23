@@ -196,6 +196,54 @@ git branch
  
 git merge branch name
 
+class5
+=====
+
+git branch  -d <branch name>  - delete branch
+
+Note: when ever deleting branch make sure you currently not present in that branch
+
+ls -a - show hidden files
+ls - list all files
+ls -l - long list
+
+git push path/central/repo <branch name> 
+
+git push origin <branch name>
+
+git remote -v - check what is origin
+
+git log
+q - come out of all commit
+
+git branch -d branch name - delete branch from local 
+git branch -D branch name - force delete the changes  local
+
+git log -5
+git log --oneline
+git log --oneline -5
+git log --author=vijay
+git log --author=name of author -3
+git log --oneline --since=yyyy-mm-dd
+git log --oneline --until=yyyy-mm-dd
+git log --oneline --since=yyyy-mm-dd --until=yyyy-mm-dd
+
+git push origin -d <branch-name> - delete the branch from central/remote repository
+
+
+vi .gitignore
+add files you need to ignore to show in git status
+esc :wq!
+
+git add .
+git commit -m
+
+create file in .gitignore
+git status
+
+pull request is raised to merger the changes from develop to master
+reviwer will review the code in develop branch and then merge the changes
+then after successfull merge delete develop branch
 
 
 
