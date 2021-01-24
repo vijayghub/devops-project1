@@ -245,6 +245,56 @@ pull request is raised to merger the changes from develop to master
 reviwer will review the code in develop branch and then merge the changes
 then after successfull merge delete develop branch
 
+class6
+======
+master
+-----
+touch a b
+
+create new branch develop
+develop
+========
+a b 
+
+eidt file a
+git add .
+git commit
+
+master
+-----
+edit file a
+git add .
+git commit
+
+
+git merge master
+- get conflict 
+
+- > two different branche if same files is edite in both the bracnhes then if we try to merge
+will get conflict
+
+-> vi filename
+- can see conflict markes. so edit or delete then add and commit
+
+git push
+
+comout out of conflict
+=================
+git merge -- abort
+
+
+Alias
+====
+git status
+git config --global alias.s "status"
+git s
+git config --global alias.l2 "log --oneline -2"
+git l2
+
+remove alias
+============
+git config --gobal --unset alias.s
+git config --global --unset alias.l2
 
 
 
