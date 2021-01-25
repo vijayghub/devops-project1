@@ -245,6 +245,105 @@ pull request is raised to merger the changes from develop to master
 reviwer will review the code in develop branch and then merge the changes
 then after successfull merge delete develop branch
 
+class6
+======
+master
+-----
+touch a b
 
+create new branch develop
+develop
+========
+a b 
+
+eidt file a
+git add .
+git commit
+
+master
+-----
+edit file a
+git add .
+git commit
+
+
+git merge master
+- get conflict 
+
+- > two different branche if same files is edite in both the bracnhes then if we try to merge
+will get conflict
+
+-> vi filename
+- can see conflict markes. so edit or delete then add and commit
+
+git push
+
+comout out of conflict
+=================
+git merge -- abort
+
+
+Alias
+====
+git status
+git config --global alias.s "status"
+git s
+git config --global alias.l2 "log --oneline -2"
+git l2
+
+remove alias
+============
+git config --gobal --unset alias.s
+git config --global --unset alias.l2
+
+class7
+-------
+merge
+-----
+merge files from one branch to another 
+- it will create extr cid for merge
+
+
+rebase
+------
+
+- no extra commit 
+- clearly show each branch wise 
+- commit history looks neat
+
+amend
+--------
+touch amd1 amd2 amd3
+
+git add amd1 amd2
+git commit -m "msg"
+
+one commit id is created in LA
+
+git add amd3
+- add the missing file in single commit 
+git commit --amend -m " msg "
+
+
+git commit --amend -m " msg "
+
+- we are trying to add the all files to single commit id 
+- commit id will change for new commit
+
+update commit message
+=================
+git commit --amend -m " new commit message descriptions with issue id"
+
+
+to provide lengthy message in different lines
+==========================
+git add .
+git commit -m "line1 " -m "line " -m " line3"
+
+or
+git commit -> hit enter
+vi editor will open
+enter the message
+esc :wq!
 
 
