@@ -347,3 +347,55 @@ enter the message
 esc :wq!
 
 
+
+Class 8
+=========
+
+Tagging
+---------
+- to mark the release point 
+
+git tag  - show tag
+git tag <tag name>
+git tag
+
+git show tagname  - to show all the commit under the tag
+or
+git log 
+
+git push origin -d t1 t2 t3 (delete tag from central repo)
+git tag -d tagname ( delete tag from local)
+
+
+what is difference b/w git fetch and git pull
+---------------------------------------------
+git pull = git fetch + git merge
+
+created file central repo
+git fetch
+- checked that file data not presetn in  local
+
+git merge origin/master
+- > check the file and data  will be present in local
+git branch -r  -> show all remote branches
+git bracnh -a  -> local and remote branches
+
+
+cherry-pick
+==========
+- If we want to copy specific commit to different branch
+- we use cherry-pick
+
+master          master1
+c1                c1
+c2                c2
+
+then
+c3
+c4git cherry-pick 83dd81df4174716d98ea418a952ebde930a9004d
+c4
+
+to copy c3 commit id from master branch to master1 branch
+git cherry-pic commit-id
+ex: git cherry-pick 83dd81df4174716d98ea418a952ebde930a9004d
+
